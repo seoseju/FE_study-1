@@ -16,7 +16,7 @@ body{
 
 header{
     
-    display: inline-block;
+    display: inline-block; /*inline으로 옆에 요소가 올 수 있게 하면서 한 줄을 갖는 Block */
     font-family: "LiuJian";
     color: white;
     font-size: 30px;
@@ -66,11 +66,43 @@ nav a:hover{
 main{
     display: flex; /*요소들의 위치를 align-items/margin:auto 등등으로 조절 가능 */
     /*display:block: 요소가 한 줄을 다 차지해버림  */
-    margin-top: 50px;
-}
-div#home1{ /*tag */
+    flex-direction: column; /*요소를 아래로 배치 */
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: LovedbytheKing;
+    align-items: center;
+}
+main div#narr p{ /*tag 연습하려고 나눔 */
+    
     display: block; 
-    margin:auto; 
     font-size: 24px;
+    margin: 15px;
+}
+
+main div{
+    display: block; 
+    margin:0 auto; /*위아래만 마진 0으로 하고 양옆은 auto */
+}
+
+
+footer div{
+    height:100px; 
+    display:inline-block;
+    background-color: gray;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-family:LovedbytheKing;
+    width:100%; 
+    text-align: center;
+ 
+}
+footer a{
+    text-decoration-line: none;
+    color:white; 
+}
+footer a:hover{
+    color:black; 
+}
+footer p{
+    margin: 0;
 }
