@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "LovedbytheKing";
+    src: url("LovedbytheKing-Regular.woff");
+  
+  }
+@font-face {
+    font-family: "LiuJian";
+    src: url("LiuJianMaoCao-Regular.woff");
+}
+
+body{
+    background-color: black;
+}
